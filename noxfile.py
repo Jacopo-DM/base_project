@@ -6,6 +6,10 @@ Py Ver:     3.12
 OS:         macOS  Sequoia 15.3.1
 Hardware:   M4 Pro
 Status:     Completed ✅
+
+Notes
+-----
+    * https://github.com/wntrblm/nox
 """
 
 # Standard library
@@ -14,13 +18,6 @@ from pathlib import Path
 
 # Third-party libraries
 import nox
-
-# Local libraries
-# Global constants
-# Global functions
-# Warning Control
-# Type Checking
-# Type Aliases
 
 # --- NOX SETUP ---
 nox.options.default_venv_backend = "uv"
