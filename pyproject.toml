@@ -3,12 +3,21 @@ name = "a2-base"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-authors = [
-    { name = "JMDM", email = "jmo.880@gmail.com" }
-]
+authors = [{ name = "JMDM", email = "jmo.880@gmail.com" }]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = ["mypy>=1.18.1", "rich>=14.1.0", "ruff>=0.13.0"]
 
 [build-system]
 requires = ["uv_build>=0.8.17,<0.9.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["nox>=2025.5.1"]
+docs = [
+    "linkify-it-py>=2.0.3",
+    "myst-parser>=4.0.1",
+    "shibuya>=2025.8.16",
+    "sphinx-autobuild>=2025.8.25",
+    "sphinx-autodoc2>=0.5.0",
+    "sphinx-design>=0.6.1",
+]
