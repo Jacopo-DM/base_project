@@ -4,7 +4,22 @@
         "**/.svn": false,
         "**/.hg": false,
         "**/.DS_Store": false,
-        "**/Thumbs.db": false
+        "**/Thumbs.db": false,
+        ".venv": true
     },
-    "explorerExclude.backup": {}
+    "explorerExclude.backup": {},
+    "python-envs.pythonProjects": [],
+    "workbench.colorCustomizations": {
+        "editorGroup.border": "#d07a2b",
+        "panel.border": "#d07a2b",
+        "sash.hoverBorder": "#d07a2b",
+        "sideBar.border": "#d07a2b",
+        "statusBar.background": "#a66122",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#d07a2b",
+        "statusBarItem.remoteBackground": "#a66122",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "tab.activeBorder": "#d07a2b"
+    },
+    "peacock.color": "#a66122"
 }
