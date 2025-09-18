@@ -10,29 +10,29 @@ jobs:
       contents: write
       
     steps:
-    - name: Check out the repository
+    - name: Check-out the Repository
       uses: actions/checkout@v5
       with:
         persist-credentials: false
 
-    - name: Set up Python
+    - name: Set-up Python
       uses: actions/setup-python@v6
       with:
-        python-version: '3.12' 
+        python-version: '3.12.9' 
     
     - name: Install uv
       uses: astral-sh/setup-uv@v5
 
-    - name: Create uv environment
+    - name: Create uv Environment
       run: uv venv
 
-    - name: Install dependencies
+    - name: Install Dependencies
       run: uv sync --all-groups
 
     - name: Build HTML
       run: uv run sphinx-autobuild docs docs/_build
     
-    - name: Upload documentation
+    - name: Upload Documentation
       uses: actions/upload-artifact@v4
       with:
         name: docs
@@ -44,5 +44,5 @@ jobs:
       with:
         publish_branch: gh-pages
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: docs/build/html
+        publish_dir: docs/_build
         force_orphan: true
