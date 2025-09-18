@@ -30,7 +30,7 @@ jobs:
       run: uv sync --all-groups
 
     - name: Build HTML
-      run: sphinx-autobuild docs docs/_build
+      run: uv run sphinx-autobuild docs docs/_build
     
     - name: Upload documentation
       uses: actions/upload-artifact@v4
